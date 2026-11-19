@@ -1,0 +1,1509 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人体1000tr - 品牌_专业解析与品质影像社区</title>
+<meta name="description" content="人体1000tr官方网站，深耕垂直领域的专业视频品牌平台，为创作者与企业搭建高品质内容生态，呈现原创、正版、高清的人体1000tr精品内容与深度解析。">
+<meta name="keywords" content="人体1000tr,官方网站,视频品牌,创作者社区,精品内容">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Ccircle cx='32' cy='26' r='12' fill='%23f59e0b'/%3E%3Cpath d='M12 56c2-12 10-18 20-18s18 6 20 18z' fill='%2338bdf8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hrt-bg:#0b1020;
+  --hrt-bg-soft:#121a30;
+  --hrt-card:#16203a;
+  --hrt-line:rgba(255,255,255,.09);
+  --hrt-txt:#e8edf7;
+  --hrt-dim:#9aa7c2;
+  --hrt-amber:#f59e0b;
+  --hrt-cyan:#38bdf8;
+  --hrt-pink:#f472b6;
+  --hrt-radius:16px;
+  --hrt-maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 85% -10%,rgba(56,189,248,.14),transparent 60%),
+    radial-gradient(900px 500px at 5% 0%,rgba(245,158,11,.12),transparent 55%),
+    var(--hrt-bg);
+  color:var(--hrt-txt);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.hrt-wrap{max-width:var(--hrt-maxw);margin:0 auto;padding:0 20px}
+.hrt-sticky{position:sticky;top:0;z-index:80}
+
+/* ---------- 公告条 ---------- */
+.hrt-announce{
+  background:linear-gradient(90deg,#1f2a4a,#2b1f3f 55%,#3a2417);
+  border-bottom:1px solid var(--hrt-line);
+  font-size:13px;
+}
+.hrt-announce__inner{
+  max-width:var(--hrt-maxw);margin:0 auto;padding:8px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  color:#d7e0f2;
+}
+.hrt-announce__tag{
+  flex:none;font-size:11px;letter-spacing:.08em;padding:2px 8px;border-radius:99px;
+  background:var(--hrt-amber);color:#231402;font-weight:700;
+}
+.hrt-announce__list{
+  display:flex;gap:20px;overflow:hidden;flex:1;min-width:0;
+}
+.hrt-announce__item{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.9}
+.hrt-announce__item b{color:var(--hrt-cyan)}
+.hrt-announce__more{flex:none;color:var(--hrt-cyan);font-size:12px}
+
+/* ---------- 页头 ---------- */
+.hrt-header{
+  background:rgba(11,16,32,.86);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--hrt-line);
+}
+.hrt-header__inner{display:flex;align-items:center;gap:18px;height:64px}
+.hrt-brand{display:flex;align-items:center;gap:10px;flex:none}
+.hrt-brand__mark{
+  width:36px;height:36px;border-radius:10px;flex:none;
+  background:conic-gradient(from 210deg,var(--hrt-amber),var(--hrt-pink),var(--hrt-cyan),var(--hrt-amber));
+  display:grid;place-items:center;font-weight:800;color:#0b1020;font-size:15px;
+}
+.hrt-brand__name{font-size:17px;font-weight:700;letter-spacing:.02em}
+.hrt-brand__sub{font-size:10px;color:var(--hrt-dim);letter-spacing:.18em;text-transform:uppercase}
+.hrt-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.hrt-nav a{
+  font-size:14px;padding:8px 12px;border-radius:8px;color:var(--hrt-dim);
+  transition:.22s;
+}
+.hrt-nav a:hover,.hrt-nav a.hrt-nav--active{color:#fff;background:rgba(255,255,255,.07)}
+.hrt-header__tools{display:flex;align-items:center;gap:8px;flex:none}
+.hrt-search{
+  display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.06);
+  border:1px solid var(--hrt-line);border-radius:99px;padding:5px 6px 5px 12px;
+}
+.hrt-search input{
+  background:none;border:none;outline:none;color:#fff;width:126px;font-size:13px;
+}
+.hrt-search input::placeholder{color:#6f7d99}
+.hrt-search button{
+  width:26px;height:26px;border-radius:99px;display:grid;place-items:center;
+  background:var(--hrt-cyan);color:#06222f;font-size:13px;font-weight:700;
+}
+.hrt-search__hint{
+  position:absolute;margin-top:44px;right:20px;max-width:280px;
+  background:#1b2436;border:1px solid var(--hrt-line);border-radius:10px;
+  font-size:12px;color:var(--hrt-dim);padding:8px 12px;display:none;z-index:90;
+}
+.hrt-search__hint.hrt-show{display:block}
+.hrt-burger{display:none;width:38px;height:38px;border-radius:9px;background:rgba(255,255,255,.07);font-size:18px}
+
+/* ---------- 首屏 ---------- */
+.hrt-hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.hrt-hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hrt-hero__eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;
+  color:var(--hrt-amber);border:1px solid rgba(245,158,11,.4);
+  padding:4px 12px;border-radius:99px;margin-bottom:18px;
+}
+.hrt-hero h1{
+  font-size:52px;line-height:1.12;letter-spacing:-.01em;margin-bottom:8px;
+  background:linear-gradient(100deg,#fff 20%,#a7f3d0 60%,var(--hrt-cyan));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hrt-hero__slogan{font-size:18px;color:var(--hrt-cyan);margin-bottom:18px;font-weight:600}
+.hrt-hero__intro{color:var(--hrt-dim);font-size:14.5px;max-width:520px}
+.hrt-hero__actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.hrt-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:11px;
+  font-size:14px;font-weight:600;transition:.22s;
+}
+.hrt-btn--primary{background:linear-gradient(120deg,var(--hrt-amber),var(--hrt-pink));color:#1a0d1f}
+.hrt-btn--primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(245,158,11,.32)}
+.hrt-btn--ghost{border:1px solid var(--hrt-line);color:var(--hrt-txt)}
+.hrt-btn--ghost:hover{background:rgba(255,255,255,.07)}
+.hrt-hero__stats{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.hrt-stat b{display:block;font-size:26px;color:#fff;letter-spacing:.01em}
+.hrt-stat span{font-size:12px;color:var(--hrt-dim)}
+.hrt-hero__visual{position:relative}
+.hrt-hero__cover{
+  border-radius:22px;overflow:hidden;border:1px solid var(--hrt-line);
+  box-shadow:0 26px 60px rgba(0,0,0,.5);position:relative;
+}
+.hrt-hero__cover img{width:100%;height:auto;aspect-ratio:16/12;object-fit:cover}
+.hrt-hero__badge{
+  position:absolute;left:14px;top:14px;background:rgba(8,12,24,.72);
+  border:1px solid var(--hrt-line);border-radius:99px;padding:4px 12px;font-size:11.5px;color:var(--hrt-cyan);
+}
+.hrt-hero__float{
+  position:absolute;right:-6px;bottom:-22px;background:#16203a;border:1px solid var(--hrt-line);
+  border-radius:14px;padding:12px 16px;font-size:12px;color:var(--hrt-dim);width:190px;
+}
+.hrt-hero__float b{color:var(--hrt-amber);display:block;font-size:15px;margin-bottom:2px}
+
+/* ---------- 通用章节 ---------- */
+.hrt-section{padding:64px 0}
+.hrt-section--alt{background:linear-gradient(180deg,rgba(255,255,255,.022),transparent)}
+.hrt-head{margin-bottom:34px;max-width:740px}
+.hrt-head__kicker{font-size:12px;letter-spacing:.2em;color:var(--hrt-cyan);text-transform:uppercase;margin-bottom:8px}
+.hrt-head h2{font-size:30px;letter-spacing:-.01em;margin-bottom:10px}
+.hrt-head p{color:var(--hrt-dim);font-size:14px}
+
+/* ---------- 深度解析 ---------- */
+.hrt-about__grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hrt-about__body p{color:var(--hrt-dim);font-size:14.5px;margin-bottom:14px}
+.hrt-about__body strong{color:var(--hrt-amber);font-weight:600}
+.hrt-about__cards{display:grid;gap:14px}
+.hrt-about__card{
+  background:var(--hrt-card);border:1px solid var(--hrt-line);border-radius:var(--hrt-radius);
+  padding:18px 20px;transition:.24s;
+}
+.hrt-about__card:hover{border-color:rgba(56,189,248,.5);transform:translateY(-3px)}
+.hrt-about__card h3{font-size:15px;margin-bottom:6px;color:#fff}
+.hrt-about__card p{font-size:13px;color:var(--hrt-dim)}
+
+/* ---------- 焦点视频 ---------- */
+.hrt-feature{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+.hrt-card-v{
+  background:var(--hrt-card);border:1px solid var(--hrt-line);border-radius:var(--hrt-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.26s;
+}
+.hrt-card-v:hover{transform:translateY(-4px);border-color:rgba(245,158,11,.42);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.hrt-thumb{position:relative;overflow:hidden}
+.hrt-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s}
+.hrt-card-v:hover .hrt-thumb img{transform:scale(1.05)}
+.hrt-thumb__play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.55));
+}
+.hrt-thumb__play i{
+  width:46px;height:46px;border-radius:99px;background:rgba(255,255,255,.18);
+  backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.4);
+  display:grid;place-items:center;font-style:normal;font-size:15px;color:#fff;
+  transition:.24s;
+}
+.hrt-card-v:hover .hrt-thumb__play i{background:var(--hrt-amber);color:#1a0d1f;border-color:transparent}
+.hrt-thumb__tag{
+  position:absolute;left:10px;bottom:10px;font-size:11px;padding:2px 9px;border-radius:99px;
+  background:rgba(8,12,24,.78);color:var(--hrt-cyan);border:1px solid var(--hrt-line);
+}
+.hrt-thumb__dur{
+  position:absolute;right:10px;bottom:10px;font-size:11px;padding:1px 7px;border-radius:5px;
+  background:rgba(0,0,0,.7);color:#ddd;
+}
+.hrt-card-v__body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.hrt-card-v__body h3{font-size:15.5px;line-height:1.45;color:#fff}
+.hrt-card-v__body p{font-size:12.5px;color:var(--hrt-dim);flex:1}
+.hrt-card-v__meta{
+  display:flex;align-items:center;gap:10px;font-size:11.5px;color:#7d8aa6;margin-top:4px;
+  flex-wrap:wrap;
+}
+.hrt-avatar{
+  width:22px;height:22px;border-radius:99px;display:grid;place-items:center;
+  font-size:10.5px;font-weight:700;color:#08111f;flex:none;
+}
+.hrt-ops{display:flex;gap:8px;margin-top:10px}
+.hrt-op{
+  font-size:11.5px;color:var(--hrt-dim);border:1px solid var(--hrt-line);
+  padding:3px 10px;border-radius:99px;transition:.2s;display:inline-flex;align-items:center;gap:5px;
+}
+.hrt-op:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.hrt-op.hrt-op--on{color:var(--hrt-pink);border-color:rgba(244,114,182,.5)}
+.hrt-op.hrt-op--fav{color:var(--hrt-amber);border-color:rgba(245,158,11,.5)}
+.hrt-feature__side{display:grid;gap:14px}
+.hrt-card-v--mini{flex-direction:row}
+.hrt-card-v--mini .hrt-thumb{width:44%;flex:none}
+.hrt-card-v--mini .hrt-thumb img{height:100%;aspect-ratio:auto}
+.hrt-card-v--mini .hrt-card-v__body{padding:12px 14px}
+.hrt-card-v--mini .hrt-card-v__body h3{font-size:13.5px}
+.hrt-card-v--mini .hrt-card-v__body p{font-size:12px}
+
+/* ---------- 视频流网格 ---------- */
+.hrt-grid-v{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hrt-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.hrt-chip{
+  font-size:12.5px;padding:6px 15px;border-radius:99px;border:1px solid var(--hrt-line);
+  color:var(--hrt-dim);transition:.2s;
+}
+.hrt-chip:hover{color:#fff}
+.hrt-chip.hrt-chip--active{background:var(--hrt-cyan);color:#06222f;border-color:transparent;font-weight:600}
+
+/* ---------- 专题 ---------- */
+.hrt-topics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hrt-topic{
+  position:relative;border-radius:var(--hrt-radius);overflow:hidden;border:1px solid var(--hrt-line);
+  min-height:210px;display:flex;align-items:flex-end;transition:.26s;
+}
+.hrt-topic:hover{transform:translateY(-4px)}
+.hrt-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hrt-topic__mask{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(5,8,18,.1) 20%,rgba(5,8,18,.92));
+}
+.hrt-topic__txt{position:relative;padding:18px;width:100%}
+.hrt-topic__txt h3{font-size:16px;margin-bottom:5px}
+.hrt-topic__txt p{font-size:12.5px;color:#c3cde0;margin-bottom:8px}
+.hrt-topic__status{font-size:11px;color:var(--hrt-amber)}
+
+/* ---------- 创作者 ---------- */
+.hrt-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.hrt-creator{
+  background:var(--hrt-card);border:1px solid var(--hrt-line);border-radius:var(--hrt-radius);
+  padding:20px 18px;text-align:center;transition:.24s;
+}
+.hrt-creator:hover{transform:translateY(-4px);border-color:rgba(56,189,248,.45)}
+.hrt-creator__av{
+  width:58px;height:58px;border-radius:99px;margin:0 auto 12px;display:grid;place-items:center;
+  font-size:20px;font-weight:800;color:#08111f;
+}
+.hrt-creator h3{font-size:15px;margin-bottom:3px}
+.hrt-creator__field{font-size:11.5px;color:var(--hrt-cyan);margin-bottom:9px}
+.hrt-creator p{font-size:12.5px;color:var(--hrt-dim);margin-bottom:10px}
+.hrt-creator__data{display:flex;justify-content:center;gap:16px;font-size:11.5px;color:#7d8aa6}
+.hrt-creator__data b{color:#fff;display:block;font-size:13px}
+.hrt-creator__btn{
+  margin-top:12px;font-size:12px;border:1px solid var(--hrt-line);border-radius:99px;
+  padding:4px 14px;color:var(--hrt-dim);transition:.2s;
+}
+.hrt-creator__btn:hover{color:#fff;border-color:var(--hrt-cyan)}
+
+/* ---------- 评论区 ---------- */
+.hrt-comments{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.hrt-comment{
+  background:var(--hrt-bg-soft);border:1px solid var(--hrt-line);border-radius:14px;
+  padding:16px 18px;position:relative;
+}
+.hrt-comment__head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.hrt-comment__head b{font-size:13px}
+.hrt-comment__head span{font-size:11px;color:#6f7d99;margin-left:auto}
+.hrt-comment p{font-size:13px;color:#bcc7db}
+.hrt-comment__like{
+  position:absolute;right:14px;bottom:12px;font-size:11.5px;color:#6f7d99;
+}
+.hrt-comment__like:hover{color:var(--hrt-pink)}
+
+/* ---------- 榜单 ---------- */
+.hrt-rank{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hrt-rank__col{background:var(--hrt-card);border:1px solid var(--hrt-line);border-radius:var(--hrt-radius);padding:18px}
+.hrt-rank__col h3{font-size:14px;margin-bottom:12px;color:var(--hrt-amber);letter-spacing:.04em}
+.hrt-rank__row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.06);font-size:13px}
+.hrt-rank__row:last-child{border-bottom:none}
+.hrt-rank__no{
+  width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-size:11px;
+  background:rgba(255,255,255,.08);color:var(--hrt-dim);flex:none;
+}
+.hrt-rank__row:nth-child(2) .hrt-rank__no{background:var(--hrt-amber);color:#1a0d1f;font-weight:700}
+.hrt-rank__row span{margin-left:auto;font-size:11.5px;color:#6f7d99}
+
+/* ---------- 故事随笔 ---------- */
+.hrt-essays{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.hrt-essay{
+  border-left:3px solid var(--hrt-pink);background:var(--hrt-bg-soft);
+  border-radius:0 14px 14px 0;padding:18px 20px;
+}
+.hrt-essay h3{font-size:15px;margin-bottom:6px}
+.hrt-essay p{font-size:13px;color:var(--hrt-dim);margin-bottom:8px}
+.hrt-essay small{font-size:11.5px;color:var(--hrt-cyan)}
+
+/* ---------- 灵感工具 ---------- */
+.hrt-tools{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hrt-tool{
+  background:linear-gradient(150deg,rgba(56,189,248,.1),rgba(244,114,182,.07));
+  border:1px solid var(--hrt-line);border-radius:var(--hrt-radius);padding:20px;
+}
+.hrt-tool h3{font-size:14.5px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.hrt-tool h3 i{font-style:normal;width:8px;height:8px;border-radius:99px;background:var(--hrt-cyan)}
+.hrt-tool p{font-size:12.5px;color:var(--hrt-dim);margin-bottom:12px}
+.hrt-tool button{
+  font-size:12px;color:var(--hrt-cyan);border:1px solid rgba(56,189,248,.4);
+  border-radius:99px;padding:4px 13px;transition:.2s;
+}
+.hrt-tool button:hover{background:var(--hrt-cyan);color:#06222f}
+
+/* ---------- 企业动态 ---------- */
+.hrt-news{display:grid;gap:12px}
+.hrt-news__row{
+  display:flex;align-items:center;gap:16px;padding:15px 18px;
+  background:var(--hrt-card);border:1px solid var(--hrt-line);border-radius:12px;transition:.2s;
+}
+.hrt-news__row:hover{border-color:rgba(245,158,11,.42)}
+.hrt-news__date{font-size:12px;color:var(--hrt-amber);flex:none;font-variant-numeric:tabular-nums}
+.hrt-news__row h3{font-size:14px;font-weight:500;flex:1}
+.hrt-news__tag{font-size:11px;color:var(--hrt-cyan);border:1px solid rgba(56,189,248,.35);border-radius:99px;padding:1px 9px;flex:none}
+
+/* ---------- 合作 ---------- */
+.hrt-partners{display:flex;flex-wrap:wrap;gap:12px}
+.hrt-partner{
+  flex:1 1 160px;text-align:center;padding:16px 10px;border-radius:12px;
+  background:rgba(255,255,255,.04);border:1px solid var(--hrt-line);font-size:13px;color:var(--hrt-dim);
+  transition:.2s;
+}
+.hrt-partner:hover{color:#fff;background:rgba(255,255,255,.08)}
+
+/* ---------- FAQ ---------- */
+.hrt-faq{display:grid;gap:10px;max-width:880px}
+.hrt-faq details{
+  background:var(--hrt-card);border:1px solid var(--hrt-line);border-radius:12px;
+  padding:14px 18px;transition:.2s;
+}
+.hrt-faq details[open]{border-color:rgba(56,189,248,.42)}
+.hrt-faq summary{
+  font-size:14px;font-weight:500;cursor:pointer;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+}
+.hrt-faq summary::-webkit-details-marker{display:none}
+.hrt-faq summary::after{content:"+";color:var(--hrt-cyan);font-size:18px;line-height:1}
+.hrt-faq details[open] summary::after{content:"−"}
+.hrt-faq p{font-size:13px;color:var(--hrt-dim);margin-top:10px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.08)}
+
+/* ---------- 联系 ---------- */
+.hrt-contact{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start}
+.hrt-contact__box{background:var(--hrt-card);border:1px solid var(--hrt-line);border-radius:var(--hrt-radius);padding:26px}
+.hrt-contact__box h3{font-size:17px;margin-bottom:10px}
+.hrt-contact__box p{font-size:13.5px;color:var(--hrt-dim);margin-bottom:8px}
+.hrt-contact__box .hrt-line-item{font-size:13px;color:#c3cde0;display:flex;gap:10px;padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.07)}
+.hrt-contact__box .hrt-line-item b{color:var(--hrt-cyan);font-weight:500;flex:none}
+.hrt-submit{display:grid;gap:10px}
+.hrt-submit__field{
+  background:rgba(255,255,255,.05);border:1px solid var(--hrt-line);border-radius:10px;
+  padding:11px 14px;color:#fff;font-size:13px;outline:none;transition:.2s;width:100%;
+}
+.hrt-submit__field:focus{border-color:var(--hrt-cyan)}
+textarea.hrt-submit__field{resize:vertical;min-height:82px}
+
+/* ---------- 页脚 ---------- */
+.hrt-footer{
+  border-top:1px solid var(--hrt-line);background:rgba(6,10,20,.85);padding:48px 0 26px;margin-top:20px;
+}
+.hrt-footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px;margin-bottom:32px}
+.hrt-footer h4{font-size:13px;color:#fff;margin-bottom:12px;letter-spacing:.06em}
+.hrt-footer ul{list-style:none;display:grid;gap:7px}
+.hrt-footer li,.hrt-footer p{font-size:12.5px;color:var(--hrt-dim)}
+.hrt-footer a:hover{color:var(--hrt-cyan)}
+.hrt-footer__brand p{margin-top:10px;max-width:300px}
+.hrt-footer__bottom{
+  border-top:1px solid var(--hrt-line);padding-top:18px;display:flex;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;font-size:12px;color:#6f7d99;
+}
+
+/* ---------- 浮动按钮 ---------- */
+.hrt-top{
+  position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:99px;
+  background:linear-gradient(140deg,var(--hrt-amber),var(--hrt-pink));color:#1a0d1f;
+  display:grid;place-items:center;font-size:17px;font-weight:700;z-index:70;
+  opacity:0;pointer-events:none;transition:.28s;box-shadow:0 10px 26px rgba(0,0,0,.4);
+}
+.hrt-top.hrt-show{opacity:1;pointer-events:auto}
+
+/* ---------- 弹层与提示 ---------- */
+.hrt-modal{
+  position:fixed;inset:0;background:rgba(4,7,15,.78);backdrop-filter:blur(5px);
+  z-index:120;display:none;place-items:center;padding:20px;
+}
+.hrt-modal.hrt-show{display:grid}
+.hrt-modal__box{
+  background:#141d33;border:1px solid var(--hrt-line);border-radius:18px;
+  max-width:460px;width:100%;padding:26px;position:relative;
+}
+.hrt-modal__box h3{font-size:17px;margin-bottom:10px}
+.hrt-modal__box p{font-size:13px;color:var(--hrt-dim);margin-bottom:12px}
+.hrt-modal__close{
+  position:absolute;right:14px;top:10px;font-size:20px;color:#7d8aa6;
+}
+.hrt-modal__close:hover{color:#fff}
+.hrt-field{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--hrt-line);border-radius:10px;padding:10px 13px;color:#fff;font-size:13px;outline:none;margin-bottom:10px}
+.hrt-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#1e2a44;border:1px solid rgba(56,189,248,.5);color:#e8edf7;
+  font-size:13px;padding:10px 20px;border-radius:99px;z-index:200;
+  opacity:0;pointer-events:none;transition:.3s;
+}
+.hrt-toast.hrt-show{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1000px){
+  .hrt-hero__grid,.hrt-about__grid,.hrt-contact{grid-template-columns:1fr}
+  .hrt-feature{grid-template-columns:1fr}
+  .hrt-grid-v,.hrt-topics,.hrt-rank,.hrt-tools{grid-template-columns:repeat(2,1fr)}
+  .hrt-creators{grid-template-columns:repeat(2,1fr)}
+  .hrt-footer__grid{grid-template-columns:1fr 1fr}
+  .hrt-hero h1{font-size:40px}
+}
+@media (max-width:720px){
+  .hrt-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#0e1526;border-bottom:1px solid var(--hrt-line);
+    padding:12px 16px;flex-direction:column;
+  }
+  .hrt-nav.hrt-nav--open{display:flex}
+  .hrt-header__inner{position:relative;height:60px}
+  .hrt-burger{display:grid;place-items:center}
+  .hrt-search input{width:88px}
+  .hrt-grid-v,.hrt-topics,.hrt-rank,.hrt-tools,.hrt-comments,.hrt-essays{grid-template-columns:1fr}
+  .hrt-creators{grid-template-columns:1fr}
+  .hrt-hero h1{font-size:32px}
+  .hrt-hero__stats{gap:22px}
+  .hrt-footer__grid{grid-template-columns:1fr}
+  .hrt-announce__list{display:none}
+  .hrt-card-v--mini{flex-direction:column}
+  .hrt-card-v--mini .hrt-thumb{width:100%}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="hrt-sticky">
+  <div class="hrt-announce">
+    <div class="hrt-announce__inner">
+      <span class="hrt-announce__tag">最新</span>
+      <div class="hrt-announce__list">
+        <span class="hrt-announce__item"><b>11·18</b> 人体1000tr 深度解析专栏《结构的三种读法》第二节上线</span>
+        <span class="hrt-announce__item"><b>11·16</b> 品牌年度影像企划「比例之光」开放投稿通道</span>
+        <span class="hrt-announce__item"><b>11·12</b> 创作者扶持计划第 4 期报名开启，名额 120 位</span>
+      </div>
+      <a class="hrt-announce__more" href="#hrt-news">全部更新 →</a>
+    </div>
+  </div>
+
+  <header class="hrt-header">
+    <div class="hrt-wrap hrt-header__inner">
+      <a class="hrt-brand" href="#hrt-home">
+        <span class="hrt-brand__mark">人</span>
+        <span>
+          <span class="hrt-brand__name">人体1000tr</span>
+          <span class="hrt-brand__sub">Official Video Brand</span>
+        </span>
+      </a>
+      <nav class="hrt-nav" id="hrtNav">
+        <a href="#hrt-home" class="hrt-nav--active">首页</a>
+        <a href="#hrt-feature">焦点内容</a>
+        <a href="#hrt-topics">专题企划</a>
+        <a href="#hrt-creators">创作者</a>
+        <a href="#hrt-about">品牌解析</a>
+        <a href="#hrt-news">企业动态</a>
+        <a href="#hrt-faq">帮助</a>
+        <a href="#hrt-contact">联系</a>
+      </nav>
+      <div class="hrt-header__tools">
+        <div class="hrt-search">
+          <input type="text" id="hrtSearchInput" placeholder="搜索内容 / 创作者" aria-label="搜索">
+          <button type="button" id="hrtSearchBtn" aria-label="搜索提交">→</button>
+        </div>
+        <button class="hrt-burger" id="hrtBurger" aria-label="展开导航">☰</button>
+      </div>
+      <div class="hrt-search__hint" id="hrtSearchHint"></div>
+    </div>
+  </header>
+</div>
+
+<main id="hrt-home">
+
+  <!-- 首屏 -->
+  <section class="hrt-hero">
+    <div class="hrt-wrap hrt-hero__grid">
+      <div>
+        <span class="hrt-hero__eyebrow">人体1000tr 官方网站 · 企业级视频品牌</span>
+        <h1>人体1000tr</h1>
+        <p class="hrt-hero__slogan">以专业影像，读解结构与比例的千种答案</p>
+        <p class="hrt-hero__intro">
+          人体1000tr 是一个深耕人体结构与比例研究领域的视频内容品牌。我们以原创、正版、高清的影像语言，
+          把解剖结构、视觉比例、造型逻辑与日常观察连接起来，为创作者、学习者与内容机构提供可反复观看的专业素材与深度解析。
+          作为行业内持续运营的垂直品牌，我们相信真实、温暖而有力量的内容，能够陪伴每一位观众在理解身体的道路上稳步成长。
+        </p>
+        <div class="hrt-hero__actions">
+          <a class="hrt-btn hrt-btn--primary" href="#hrt-feature">浏览焦点内容</a>
+          <a class="hrt-btn hrt-btn--ghost" href="#hrt-about">了解品牌解析</a>
+          <button class="hrt-btn hrt-btn--ghost" type="button" id="hrtShareBtn">分享官网</button>
+        </div>
+        <div class="hrt-hero__stats">
+          <div class="hrt-stat"><b data-hrt-count="1860">0</b><span>原创精品内容</span></div>
+          <div class="hrt-stat"><b data-hrt-count="42600">0</b><span>认证创作者</span></div>
+          <div class="hrt-stat"><b data-hrt-count="9">0</b><span>年持续运营</span></div>
+        </div>
+      </div>
+      <div class="hrt-hero__visual">
+        <div class="hrt-hero__cover">
+          <span class="hrt-hero__badge">年度主视觉 · 比例之光</span>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 480'%3E%3Cdefs%3E%3ClinearGradient id='hg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2313213f'/%3E%3Cstop offset='1' stop-color='%23362748'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='480' fill='url(%23hg)'/%3E%3Cg fill='none' stroke='%23f59e0b' stroke-opacity='.55' stroke-width='1.4'%3E%3Ccircle cx='320' cy='170' r='72'/%3E%3Cpath d='M320 242v150'/%3E%3Cpath d='M240 392h160'/%3E%3Cpath d='M320 300l-70 60M320 300l70 60'/%3E%3Crect x='245' y='120' width='150' height='270' stroke='%2338bdf8' stroke-opacity='.45' stroke-dasharray='6 6'/%3E%3C/g%3E%3Cg fill='%2338bdf8' fill-opacity='.8'%3E%3Ccircle cx='120' cy='90' r='4'/%3E%3Ccircle cx='520' cy='120' r='3'/%3E%3Ccircle cx='560' cy='350' r='4'/%3E%3C/g%3E%3Ctext x='320' y='452' text-anchor='middle' fill='%23e8edf7' font-size='17' font-family='sans-serif'%3E人体1000tr · 结构比例研究主视觉%3C/text%3E%3C/svg%3E" alt="人体1000tr 品牌年度主视觉：结构比例研究图示">
+        </div>
+        <div class="hrt-hero__float">
+          <b>本周更新 12 部</b>
+          新增结构解析、比例观察与创作幕后三类精品内容。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌深度解析 -->
+  <section class="hrt-section hrt-section--alt" id="hrt-about">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Brand Interpretation</div>
+        <h2>人体1000tr 品牌定位与深度解析</h2>
+        <p>从一个朴素的疑问出发：身体的结构与比例，究竟能被读解到多细的程度。</p>
+      </div>
+      <div class="hrt-about__grid">
+        <div class="hrt-about__body">
+          <p>人体1000tr 这个名称里，<strong>1000</strong> 代表我们希望对同一具身体给出尽可能多的观察角度，<strong>tr</strong> 则是我们内部长期使用的一个记号，指向"trace（痕迹）"与"training（训练）"的双重含义——既记录身体在时间里留下的痕迹，也强调理解身体本身是一种需要训练的观看能力。</p>
+          <p>作为一家以视频为核心媒介的品牌企业，我们把"人体1000tr"理解为一个可被持续填充的内容容器，而不是一个固定的结论。官方网站上线的每一支精品内容，都经过结构复核、比例标注与画面校验三道流程，确保观众看到的不只是好看的影像，而是可以被反复观看、被拆解、被引用的专业材料。</p>
+          <p>我们的内容生态由三条主线构成。第一条是<strong>结构线</strong>：以解剖学与造型学为骨架，解释骨骼、关节与肌肉如何在静态与动态中形成支撑关系。第二条是<strong>比例线</strong>：从经典比例法则到当代视觉经验，讨论不同体型、不同视角、不同镜头语言下比例的成立条件。第三条是<strong>观察线</strong>：走出工作室，走向街头、剧场、运动场与日常生活，记录真实身体在真实场景中的状态。</p>
+          <p>三条主线并非彼此孤立。我们发现，很多学习者在结构上卡住，往往不是因为记不住名称，而是因为缺少比例感的支撑；而比例判断失准，又常常源于对结构的误解。人体1000tr 的编辑团队因此坚持"结构—比例—观察"循环推进的编排方式，让每一期内容都成为上一期的补充而非重复。</p>
+          <p>在创作者侧，我们建立了开放但严格的合作机制。任何对人体结构、比例研究、视觉表达有持续兴趣的创作者，都可以通过投稿入口提交作品。我们提供标准化的拍摄指南、标注模板与版权说明，也提供剪辑思路与脚本建议，帮助创作者把零散的观察整理成结构完整的内容。我们相信，一个健康的社区不是靠流量堆出来的，而是靠一批愿意长期打磨同一件事的人共同养出来的。</p>
+          <p>在企业合作侧，人体1000tr 为教育机构、设计团队、运动品牌与内容平台提供定制化的影像素材与解析服务。我们坚持原创与正版，所有对外授权内容均可溯源，确保合作方在使用过程中不必担心版权风险。这也是我们能够被称为"值得信赖"的原因——不是因为我们说了什么，而是因为我们持续做了九年。</p>
+          <p>未来，人体1000tr 会继续在垂直领域深耕。我们不追求成为最大的视频平台，而希望成为在这个具体问题上最被信任的那一个。官方网站会持续更新企业动态、内容更新日志与合作信息，也欢迎每一位观众通过联系入口告诉我们：你想看到的第 1001 种读法，是什么。</p>
+        </div>
+        <div class="hrt-about__cards">
+          <div class="hrt-about__card">
+            <h3>结构线 · 支撑关系</h3>
+            <p>从骨骼到关节，从静态站姿到动态发力，用可视化标注拆解身体的承重逻辑。</p>
+          </div>
+          <div class="hrt-about__card">
+            <h3>比例线 · 视觉成立</h3>
+            <p>经典法则与当代经验对照，讨论镜头、视角与体型差异下的比例判断。</p>
+          </div>
+          <div class="hrt-about__card">
+            <h3>观察线 · 真实场景</h3>
+            <p>街头、剧场、运动场与日常空间，记录真实身体在真实光线里的状态。</p>
+          </div>
+          <div class="hrt-about__card">
+            <h3>创作线 · 幕后与工具</h3>
+            <p>脚本灵感、标注模板、剪辑思路与拍摄指南，向所有创作者开放。</p>
+          </div>
+          <div class="hrt-about__card">
+            <h3>合作线 · 正版授权</h3>
+            <p>面向教育、设计、运动与内容机构的定制素材服务，全流程可溯源。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="hrt-section" id="hrt-feature">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Featured</div>
+        <h2>焦点内容：本周值得反复观看的影像</h2>
+        <p>由编辑团队从近期更新中挑选，兼顾专业深度与观看体验。</p>
+      </div>
+      <div class="hrt-feature">
+        <article class="hrt-card-v">
+          <div class="hrt-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f2c3a'/%3E%3Cstop offset='1' stop-color='%23222a55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f1)'/%3E%3Cg stroke='%2338bdf8' stroke-opacity='.6' fill='none' stroke-width='1.3'%3E%3Cpath d='M60 300 L200 120 L340 300 Z'/%3E%3Cpath d='M220 300 L340 150 L470 300 Z' stroke='%23f59e0b' stroke-opacity='.7'/%3E%3Cpath d='M380 300 L480 190 L580 300 Z'/%3E%3C/g%3E%3Cg fill='%23f472b6' fill-opacity='.85'%3E%3Ccircle cx='200' cy='120' r='5'/%3E%3Ccircle cx='340' cy='150' r='5'/%3E%3Ccircle cx='480' cy='190' r='5'/%3E%3C/g%3E%3Ctext x='320' y='338' text-anchor='middle' fill='%23c3cde0' font-size='14' font-family='sans-serif'%3E三角形支撑在站姿中的三种读法%3C/text%3E%3C/svg%3E" alt="焦点视频封面：三角形支撑在站姿中的三种读法">
+            <div class="hrt-thumb__play"><i>▶</i></div>
+            <span class="hrt-thumb__tag">结构线 · 深度解析</span>
+            <span class="hrt-thumb__dur">18:42</span>
+          </div>
+          <div class="hrt-card-v__body">
+            <h3>三角形支撑在站姿中的三种读法：从脚底到肩胛的力线追踪</h3>
+            <p>我们常把"站得稳"当作一种直觉，但它其实可以被拆成一组清晰的几何关系。本期用三组实拍镜头，逐层追踪脚底压力分布、膝关节朝向与肩胛稳定性之间的联动，并给出可用于自检的观察清单。</p>
+            <div class="hrt-card-v__meta">
+              <span class="hrt-avatar" style="background:#f59e0b">沈</span>
+              <span>沈砚舟 · 结构研究组</span>
+              <span>· 2.6 万次观看</span>
+            </div>
+            <div class="hrt-ops">
+              <button class="hrt-op" data-hrt-like type="button">♡ <span>862</span></button>
+              <button class="hrt-op" data-hrt-fav type="button">☆ 收藏</button>
+              <button class="hrt-op" data-hrt-copy type="button">⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+        <div class="hrt-feature__side">
+          <article class="hrt-card-v hrt-card-v--mini">
+            <div class="hrt-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 360'%3E%3Crect width='360' height='360' fill='%23241833'/%3E%3Ccircle cx='180' cy='150' r='66' fill='none' stroke='%23f472b6' stroke-width='2'/%3E%3Ccircle cx='180' cy='150' r='40' fill='none' stroke='%23f59e0b' stroke-width='1.6' stroke-dasharray='5 5'/%3E%3Cpath d='M180 216v104' stroke='%2338bdf8' stroke-width='2'/%3E%3Ctext x='180' y='344' text-anchor='middle' fill='%23c3cde0' font-size='12' font-family='sans-serif'%3E头部与身高的比例对照%3C/text%3E%3C/svg%3E" alt="视频封面：头部与身高的比例对照实验">
+              <div class="hrt-thumb__play"><i>▶</i></div>
+              <span class="hrt-thumb__tag">比例线</span>
+              <span class="hrt-thumb__dur">09:15</span>
+            </div>
+            <div class="hrt-card-v__body">
+              <h3>头部与身高的比例对照实验</h3>
+              <p>用同一组人物、三种焦段，检验经典比例法则的适用边界。</p>
+              <div class="hrt-card-v__meta"><span class="hrt-avatar" style="background:#f472b6">林</span><span>林知野</span></div>
+            </div>
+          </article>
+          <article class="hrt-card-v hrt-card-v--mini">
+            <div class="hrt-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 360'%3E%3Crect width='360' height='360' fill='%23102636'/%3E%3Cg stroke='%2338bdf8' stroke-width='1.5' fill='none'%3E%3Cpath d='M40 280 Q120 150 180 210 T320 120'/%3E%3Cpath d='M40 300 Q120 170 180 230 T320 140' stroke='%23f59e0b' stroke-opacity='.6'/%3E%3C/g%3E%3Ctext x='180' y='344' text-anchor='middle' fill='%23c3cde0' font-size='12' font-family='sans-serif'%3E行走轨迹的时间切片%3C/text%3E%3C/svg%3E" alt="视频封面：行走轨迹的时间切片记录">
+              <div class="hrt-thumb__play"><i>▶</i></div>
+              <span class="hrt-thumb__tag">观察线</span>
+              <span class="hrt-thumb__dur">12:08</span>
+            </div>
+            <div class="hrt-card-v__body">
+              <h3>行走轨迹的时间切片记录</h3>
+              <p>在早高峰的地铁口架一台固定机位，看身体如何自我调整。</p>
+              <div class="hrt-card-v__meta"><span class="hrt-avatar" style="background:#38bdf8">周</span><span>周予安</span></div>
+            </div>
+          </article>
+          <article class="hrt-card-v hrt-card-v--mini">
+            <div class="hrt-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 360'%3E%3Crect width='360' height='360' fill='%23202318'/%3E%3Cg fill='none' stroke='%23a3e635' stroke-width='1.6'%3E%3Crect x='70' y='70' width='100' height='150' rx='8'/%3E%3Crect x='190' y='110' width='100' height='150' rx='8' stroke='%23f59e0b'/%3E%3C/g%3E%3Ctext x='180' y='330' text-anchor='middle' fill='%23c3cde0' font-size='12' font-family='sans-serif'%3E两种构图框的比例博弈%3C/text%3E%3C/svg%3E" alt="视频封面：两种构图框的比例博弈">
+              <div class="hrt-thumb__play"><i>▶</i></div>
+              <span class="hrt-thumb__tag">创作幕后</span>
+              <span class="hrt-thumb__dur">15:30</span>
+            </div>
+            <div class="hrt-card-v__body">
+              <h3>两种构图框的比例博弈</h3>
+              <p>同一主体放进不同画框，观看者的注意力会怎么移动。</p>
+              <div class="hrt-card-v__meta"><span class="hrt-avatar" style="background:#a3e635">许</span><span>许南枝</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="hrt-section hrt-section--alt">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Community Stream</div>
+        <h2>社区热门：来自创作者的真实观察</h2>
+        <p>按标签筛选，看看不同方向的创作者正在讨论什么。</p>
+      </div>
+      <div class="hrt-filter" id="hrtFilter">
+        <button class="hrt-chip hrt-chip--active" data-hrt-filter="all" type="button">全部</button>
+        <button class="hrt-chip" data-hrt-filter="结构" type="button">结构解析</button>
+        <button class="hrt-chip" data-hrt-filter="比例" type="button">比例观察</button>
+        <button class="hrt-chip" data-hrt-filter="记录" type="button">日常记录</button>
+        <button class="hrt-chip" data-hrt-filter="幕后" type="button">创作幕后</button>
+        <button class="hrt-chip" data-hrt-filter="访谈" type="button">人物访谈</button>
+      </div>
+      <div class="hrt-grid-v" id="hrtVideoGrid">
+
+        <article class="hrt-card-v" data-hrt-cat="结构">
+          <div class="hrt-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231a2340'/%3E%3Cg stroke='%23f59e0b' stroke-width='1.6' fill='none'%3E%3Ccircle cx='320' cy='150' r='58'/%3E%3Cpath d='M230 290 L320 190 L410 290'/%3E%3C/g%3E%3Cg stroke='%2338bdf8' stroke-width='1.2' stroke-dasharray='4 5' fill='none'%3E%3Cpath d='M320 60v230'/%3E%3Cpath d='M200 290h240'/%3E%3C/g%3E%3Ctext x='320' y='336' text-anchor='middle' fill='%23c3cde0' font-size='13' font-family='sans-serif'%3E肩颈放松的站姿对位%3C/text%3E%3C/svg%3E" alt="视频封面：肩颈放松的站姿对位">
+            <div class="hrt-thumb__play"><i>▶</i></div>
+            <span class="hrt-thumb__tag">结构解析</span>
+            <span class="hrt-thumb__dur">11:20</span>
+          </div>
+          <div class="hrt-card-v__body">
+            <h3>肩颈放松的站姿对位：三个容易忽略的对齐点</h3>
+            <p>耳垂、肩峰与髋骨能否落在同一条垂线上？我们做了一次 40 人的现场测量。</p>
+            <div class="hrt-card-v__meta">
+              <span class="hrt-avatar" style="background:#f59e0b">沈</span><span>沈砚舟</span><span>· 1.8 万</span>
+            </div>
+            <div class="hrt-ops">
+              <button class="hrt-op" data-hrt-like type="button">♡ <span>524</span></button>
+              <button class="hrt-op" data-hrt-fav type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hrt-card-v" data-hrt-cat="比例">
+          <div class="hrt-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232a1f3d'/%3E%3Cg stroke='%23f472b6' stroke-width='1.5' fill='none'%3E%3Crect x='120' y='60' width='120' height='240'/%3E%3Crect x='270' y='90' width='120' height='210'/%3E%3Crect x='420' y='50' width='120' height='250'/%3E%3C/g%3E%3Ctext x='320' y='336' text-anchor='middle' fill='%23c3cde0' font-size='13' font-family='sans-serif'%3E同比例的三种画面占比%3C/text%3E%3C/svg%3E" alt="视频封面：同比例的三种画面占比">
+            <div class="hrt-thumb__play"><i>▶</i></div>
+            <span class="hrt-thumb__tag">比例观察</span>
+            <span class="hrt-thumb__dur">08:47</span>
+          </div>
+          <div class="hrt-card-v__body">
+            <h3>同比例的三种画面占比：镜头远近如何改变判断</h3>
+            <p>比例不是数字，而是数字与画框的关系。这期用同一模型做了对照实验。</p>
+            <div class="hrt-card-v__meta">
+              <span class="hrt-avatar" style="background:#f472b6">林</span><span>林知野</span><span>· 2.1 万</span>
+            </div>
+            <div class="hrt-ops">
+              <button class="hrt-op" data-hrt-like type="button">♡ <span>731</span></button>
+              <button class="hrt-op" data-hrt-fav type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hrt-card-v" data-hrt-cat="记录">
+          <div class="hrt-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23122b2b'/%3E%3Cg stroke='%2334d399' stroke-width='1.5' fill='none'%3E%3Cpath d='M0 300 L160 220 L320 260 L480 180 L640 230'/%3E%3Cpath d='M0 330 L160 250 L320 290 L480 210 L640 260' stroke-opacity='.5'/%3E%3C/g%3E%3Ccircle cx='480' cy='130' r='34' fill='%23f59e0b' fill-opacity='.8'/%3E%3Ctext x='320' y='340' text-anchor='middle' fill='%23c3cde0' font-size='13' font-family='sans-serif'%3E傍晚公园里的慢跑者%3C/text%3E%3C/svg%3E" alt="视频封面：傍晚公园里的慢跑者轨迹记录">
+            <div class="hrt-thumb__play"><i>▶</i></div>
+            <span class="hrt-thumb__tag">日常记录</span>
+            <span class="hrt-thumb__dur">06:12</span>
+          </div>
+          <div class="hrt-card-v__body">
+            <h3>傍晚公园里的慢跑者：一份不作修饰的体态记录</h3>
+            <p>没有解说、没有配乐，只有不同跑姿在镜头里自然出现。</p>
+            <div class="hrt-card-v__meta">
+              <span class="hrt-avatar" style="background:#34d399">周</span><span>周予安</span><span>· 1.3 万</span>
+            </div>
+            <div class="hrt-ops">
+              <button class="hrt-op" data-hrt-like type="button">♡ <span>389</span></button>
+              <button class="hrt-op" data-hrt-fav type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hrt-card-v" data-hrt-cat="幕后">
+          <div class="hrt-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23201b12'/%3E%3Cg stroke='%23fbbf24' stroke-width='1.4' fill='none'%3E%3Cpath d='M100 280 L200 80 L300 280'/%3E%3Cpath d='M340 280 L440 80 L540 280'/%3E%3C/g%3E%3Cg fill='%2338bdf8' fill-opacity='.85'%3E%3Crect x='180' y='290' width='40' height='14' rx='3'/%3E%3Crect x='420' y='290' width='40' height='14' rx='3'/%3E%3C/g%3E%3Ctext x='320' y='340' text-anchor='middle' fill='%23c3cde0' font-size='13' font-family='sans-serif'%3E布光与比例标注现场%3C/text%3E%3C/svg%3E" alt="视频封面：布光与比例标注现场">
+            <div class="hrt-thumb__play"><i>▶</i></div>
+            <span class="hrt-thumb__tag">创作幕后</span>
+            <span class="hrt-thumb__dur">14:03</span>
+          </div>
+          <div class="hrt-card-v__body">
+            <h3>布光与比例标注现场：一支片子是怎样被校准的</h3>
+            <p>从第一次试拍到最终成片，标注线被推倒重来了多少次。</p>
+            <div class="hrt-card-v__meta">
+              <span class="hrt-avatar" style="background:#fbbf24">许</span><span>许南枝</span><span>· 2.4 万</span>
+            </div>
+            <div class="hrt-ops">
+              <button class="hrt-op" data-hrt-like type="button">♡ <span>905</span></button>
+              <button class="hrt-op" data-hrt-fav type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hrt-card-v" data-hrt-cat="访谈">
+          <div class="hrt-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%230f2436'/%3E%3Ccircle cx='230' cy='160' r='62' fill='%23f59e0b' fill-opacity='.85'/%3E%3Ccircle cx='430' cy='170' r='62' fill='%2338bdf8' fill-opacity='.7'/%3E%3Cpath d='M230 222v90M430 232v80' stroke='%23e8edf7' stroke-opacity='.5' stroke-width='3'/%3E%3Ctext x='320' y='340' text-anchor='middle' fill='%23c3cde0' font-size='13' font-family='sans-serif'%3E两位研究者的对谈现场%3C/text%3E%3C/svg%3E" alt="视频封面：两位研究者的对谈现场">
+            <div class="hrt-thumb__play"><i>▶</i></div>
+            <span class="hrt-thumb__tag">人物访谈</span>
+            <span class="hrt-thumb__dur">21:36</span>
+          </div>
+          <div class="hrt-card-v__body">
+            <h3>对谈：为什么我们愿意花四年只研究一个站姿</h3>
+            <p>两位长期合作的研究者，聊了聊枯燥、怀疑与最终的和解。</p>
+            <div class="hrt-card-v__meta">
+              <span class="hrt-avatar" style="background:#38bdf8">陆</span><span>陆延之</span><span>· 3.2 万</span>
+            </div>
+            <div class="hrt-ops">
+              <button class="hrt-op" data-hrt-like type="button">♡ <span>1120</span></button>
+              <button class="hrt-op" data-hrt-fav type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hrt-card-v" data-hrt-cat="结构">
+          <div class="hrt-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231c1f2e'/%3E%3Cg stroke='%23a78bfa' stroke-width='1.6' fill='none'%3E%3Cpath d='M180 90 Q320 30 460 90'/%3E%3Cpath d='M180 90 L180 300M460 90 L460 300'/%3E%3Cpath d='M180 200h280' stroke='%23f59e0b' stroke-width='1.2' stroke-dasharray='5 5'/%3E%3C/g%3E%3Ctext x='320' y='340' text-anchor='middle' fill='%23c3cde0' font-size='13' font-family='sans-serif'%3E肩胛带的稳定结构示意%3C/text%3E%3C/svg%3E" alt="视频封面：肩胛带的稳定结构示意">
+            <div class="hrt-thumb__play"><i>▶</i></div>
+            <span class="hrt-thumb__tag">结构解析</span>
+            <span class="hrt-thumb__dur">10:55</span>
+          </div>
+          <div class="hrt-card-v__body">
+            <h3>肩胛带的稳定结构：一张图说不清的部分</h3>
+            <p>平面示意常常丢掉的旋转与滑动，在动态镜头里才真正显形。</p>
+            <div class="hrt-card-v__meta">
+              <span class="hrt-avatar" style="background:#a78bfa">念</span><span>念白</span><span>· 9870</span>
+            </div>
+            <div class="hrt-ops">
+              <button class="hrt-op" data-hrt-like type="button">♡ <span>276</span></button>
+              <button class="hrt-op" data-hrt-fav type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="hrt-section" id="hrt-topics">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Special Projects</div>
+        <h2>专题企划：围绕一个问题的长期追踪</h2>
+        <p>每个专题都持续更新，欢迎在专题页查看完整目录与更新状态。</p>
+      </div>
+      <div class="hrt-topics">
+        <article class="hrt-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%2316263f'/%3E%3Cg stroke='%23f59e0b' stroke-width='1.6' fill='none'%3E%3Ccircle cx='320' cy='160' r='90'/%3E%3Ccircle cx='320' cy='160' r='54'/%3E%3C/g%3E%3Ctext x='320' y='330' text-anchor='middle' fill='%23e8edf7' font-size='18' font-family='sans-serif'%3E比例之光%3C/text%3E%3C/svg%3E" alt="专题封面：比例之光企划主视觉">
+          <div class="hrt-topic__mask"></div>
+          <div class="hrt-topic__txt">
+            <h3>比例之光 · 年度影像企划</h3>
+            <p>十二位创作者，用各自的方式回答"什么比例让身体成立"。</p>
+            <span class="hrt-topic__status">更新中 · 已发布 8 / 12 期</span>
+          </div>
+        </article>
+        <article class="hrt-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%23231a35'/%3E%3Cg stroke='%23f472b6' stroke-width='1.5' fill='none'%3E%3Cpath d='M80 300 L200 140 L320 300 L440 140 L560 300'/%3E%3C/g%3E%3Ctext x='320' y='380' text-anchor='middle' fill='%23e8edf7' font-size='18' font-family='sans-serif'%3E街头身体观察%3C/text%3E%3C/svg%3E" alt="专题封面：街头身体观察系列">
+          <div class="hrt-topic__mask"></div>
+          <div class="hrt-topic__txt">
+            <h3>街头身体观察 · 十二城记录</h3>
+            <p>把镜头交给真实街景，记录不同城市里身体的自然姿态。</p>
+            <span class="hrt-topic__status">更新中 · 已发布 5 / 12 期</span>
+          </div>
+        </article>
+        <article class="hrt-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%23142e2c'/%3E%3Cg stroke='%2334d399' stroke-width='1.5' fill='none'%3E%3Crect x='150' y='90' width='140' height='240' rx='10'/%3E%3Crect x='350' y='130' width='140' height='200' rx='10'/%3E%3C/g%3E%3Ctext x='320' y='380' text-anchor='middle' fill='%23e8edf7' font-size='18' font-family='sans-serif'%3E身体与空间%3C/text%3E%3C/svg%3E" alt="专题封面：身体与空间的对话系列">
+          <div class="hrt-topic__mask"></div>
+          <div class="hrt-topic__txt">
+            <h3>身体与空间 · 尺度对话</h3>
+            <p>当身体进入不同尺度的空间，比例感如何被重新定义。</p>
+            <span class="hrt-topic__status">已完结 · 共 6 期</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="hrt-section hrt-section--alt" id="hrt-creators">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Creators</div>
+        <h2>创作者矩阵：长期打磨同一件事的人</h2>
+        <p>他们来自不同背景，但都在用自己的方式回答同一个问题。</p>
+      </div>
+      <div class="hrt-creators">
+        <article class="hrt-creator">
+          <div class="hrt-creator__av" style="background:linear-gradient(140deg,#f59e0b,#f472b6)">沈</div>
+          <h3>沈砚舟</h3>
+          <div class="hrt-creator__field">结构研究 · 主创</div>
+          <p>前运动康复师，擅长把解剖关系讲成可以自检的动作清单。</p>
+          <div class="hrt-creator__data">
+            <span><b>248</b>作品</span><span><b>18.6万</b>关注</span>
+          </div>
+          <button class="hrt-creator__btn" data-hrt-author="沈砚舟|结构研究主创，前运动康复师，专注站姿与力线追踪，代表系列《支撑关系》共 42 期。" type="button">查看档案</button>
+        </article>
+        <article class="hrt-creator">
+          <div class="hrt-creator__av" style="background:linear-gradient(140deg,#38bdf8,#a78bfa)">林</div>
+          <h3>林知野</h3>
+          <div class="hrt-creator__field">比例观察 · 导演</div>
+          <p>广告导演出身，用镜头语言讨论比例如何被观看与被误读。</p>
+          <div class="hrt-creator__data">
+            <span><b>176</b>作品</span><span><b>14.2万</b>关注</span>
+          </div>
+          <button class="hrt-creator__btn" data-hrt-author="林知野|比例观察方向导演，前广告摄影师，擅长用焦段与画框做比例对照实验，代表作《三种画面占比》。" type="button">查看档案</button>
+        </article>
+        <article class="hrt-creator">
+          <div class="hrt-creator__av" style="background:linear-gradient(140deg,#34d399,#38bdf8)">周</div>
+          <h3>周予安</h3>
+          <div class="hrt-creator__field">日常记录 · 摄影</div>
+          <p>长期在街头与公园蹲点，记录未经修饰的真实身体状态。</p>
+          <div class="hrt-creator__data">
+            <span><b>312</b>作品</span><span><b>9.8万</b>关注</span>
+          </div>
+          <button class="hrt-creator__btn" data-hrt-author="周予安|日常记录方向摄影师，坚持无解说、无配乐的观察式拍摄，作品多取材于公园、地铁与菜市场。" type="button">查看档案</button>
+        </article>
+        <article class="hrt-creator">
+          <div class="hrt-creator__av" style="background:linear-gradient(140deg,#fbbf24,#34d399)">许</div>
+          <h3>许南枝</h3>
+          <div class="hrt-creator__field">创作幕后 · 剪辑</div>
+          <p>把一支片子的诞生过程完整摊开，分享标注与布光的取舍。</p>
+          <div class="hrt-creator__data">
+            <span><b>134</b>作品</span><span><b>11.5万</b>关注</span>
+          </div>
+          <button class="hrt-creator__btn" data-hrt-author="许南枝|创作幕后方向剪辑师，喜欢把失败素材也剪进成片，主张"过程比结果更值得被看见"。" type="button">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 榜单 + 故事 -->
+  <section class="hrt-section">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Ranking & Essays</div>
+        <h2>数据榜单与创作者随笔</h2>
+        <p>热度会过去，但有些文字值得留下来。</p>
+      </div>
+      <div class="hrt-rank" style="margin-bottom:34px">
+        <div class="hrt-rank__col">
+          <h3>本周热度榜</h3>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">1</span>肩颈放松的站姿对位<span>1.8万</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">2</span>同比例的三种画面占比<span>2.1万</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">3</span>布光与比例标注现场<span>2.4万</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">4</span>三角形支撑的三种读法<span>2.6万</span></div>
+        </div>
+        <div class="hrt-rank__col">
+          <h3>新人潜力榜</h3>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">1</span>念白 · 肩胛带结构<span>9870</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">2</span>迟缓镜头 · 清晨站台<span>7640</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">3</span>空山 · 呼吸与胸腔<span>6120</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">4</span>木木 · 手部比例速写<span>5480</span></div>
+        </div>
+        <div class="hrt-rank__col">
+          <h3>口碑推荐榜</h3>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">1</span>对谈：四年只研究一个站姿<span>98%</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">2</span>身体与空间 · 尺度对话<span>96%</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">3</span>行走轨迹的时间切片<span>95%</span></div>
+          <div class="hrt-rank__row"><span class="hrt-rank__no">4</span>两种构图框的比例博弈<span>94%</span></div>
+        </div>
+      </div>
+      <div class="hrt-essays">
+        <article class="hrt-essay">
+          <h3>写在第一百期之前：关于"看不懂"的耐心</h3>
+          <p>做结构内容的第四年，我越来越确信一件事：观众不是学不会，而是被太多"速成"的说法耽误了。真正难的部分，从来不是记住名称，而是在动态里认出它。</p>
+          <small>沈砚舟 · 2026 年 10 月</small>
+        </article>
+        <article class="hrt-essay">
+          <h3>一次失败的拍摄，和它教会我的事</h3>
+          <p>那天光线很好，模特也很配合，但成片一塌糊涂。后来我才意识到，问题出在画框——我一直在用自己习惯的比例，去套一个根本不属于它的身体。</p>
+          <small>林知野 · 2026 年 09 月</small>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 灵感工具 -->
+  <section class="hrt-section hrt-section--alt">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Creator Toolkit</div>
+        <h2>创作灵感：给正在准备下一支片子的你</h2>
+        <p>我们整理了团队内部常用的三类起点，点开即可获得一份简短建议。</p>
+      </div>
+      <div class="hrt-tools">
+        <div class="hrt-tool">
+          <h3><i></i>脚本灵感</h3>
+          <p>从"一个可被验证的小问题"出发，而不是从"一个宏大的主题"出发。</p>
+          <button type="button" data-hrt-idea="试试这个开头：先拍一个你认为"标准"的站姿，再请三位不同职业的人各站一次，把四组画面对齐播放——差异自己会说话。">获取开头建议</button>
+        </div>
+        <div class="hrt-tool">
+          <h3><i style="background:#f472b6"></i>标题建议</h3>
+          <p>好标题不负责总结，负责制造一个具体的好奇缺口。</p>
+          <button type="button" data-hrt-idea="标题公式参考：[具体对象] + [被忽略的细节] + [可验证的结果]。例如《同一根脊柱，为什么在镜头里像两个人》。">获取标题公式</button>
+        </div>
+        <div class="hrt-tool">
+          <h3><i style="background:#f59e0b"></i>剪辑思路</h3>
+          <p>先定"比较"再定"节奏"，大多数结构类内容的力量来自并列而非解说。</p>
+          <button type="button" data-hrt-idea="剪辑建议：把两段相似素材左右并列，让观众自己找不同；解说只在最后一句话出现，避免提前替观众下结论。">获取剪辑提示</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="hrt-section">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Voices</div>
+        <h2>来自社区的声音</h2>
+        <p>真实的反馈比任何宣传语都更有说服力。</p>
+      </div>
+      <div class="hrt-comments">
+        <div class="hrt-comment">
+          <div class="hrt-comment__head">
+            <span class="hrt-avatar" style="background:#38bdf8">阿</span><b>阿岚</b><span>2 天前</span>
+          </div>
+          <p>看了《肩颈放松的站姿对位》之后对着镜子站了十分钟，第一次意识到自己的重心一直偏在右脚。</p>
+          <button class="hrt-comment__like" data-hrt-like type="button">♡ 46</button>
+        </div>
+        <div class="hrt-comment">
+          <div class="hrt-comment__head">
+            <span class="hrt-avatar" style="background:#f472b6">研</span><b>研究所小张</b><span>4 天前</span>
+          </div>
+          <p>作为动画专业的学生，这里的比例对照实验比教材直观太多了，尤其是焦段那期，反复看了三遍。</p>
+          <button class="hrt-comment__like" data-hrt-like type="button">♡ 88</button>
+        </div>
+        <div class="hrt-comment">
+          <div class="hrt-comment__head">
+            <span class="hrt-avatar" style="background:#34d399">跑</span><b>跑步的周先生</b><span>5 天前</span>
+          </div>
+          <p>公园慢跑那期没有任何解说，反而让我注意到自己落地时的姿势，比看十篇教程都有用。</p>
+          <button class="hrt-comment__like" data-hrt-like type="button">♡ 63</button>
+        </div>
+        <div class="hrt-comment">
+          <div class="hrt-comment__head">
+            <span class="hrt-avatar" style="background:#fbbf24">木</span><b>木木</b><span>1 周前</span>
+          </div>
+          <p>投稿流程比我预想的清晰，标注模板直接下载就能用，编辑还给了两条很具体的修改建议，很受用。</p>
+          <button class="hrt-comment__like" data-hrt-like type="button">♡ 120</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="hrt-section hrt-section--alt" id="hrt-news">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Company Updates</div>
+        <h2>企业动态与官方发布</h2>
+        <p>关于内容更新、活动报名与合作进展的官方信息都会在这里首发。</p>
+      </div>
+      <div class="hrt-news">
+        <div class="hrt-news__row">
+          <span class="hrt-news__date">2026-11-18</span>
+          <h3>深度解析专栏《结构的三种读法》第二节正式上线，同步开放标注素材下载</h3>
+          <span class="hrt-news__tag">官方发布</span>
+        </div>
+        <div class="hrt-news__row">
+          <span class="hrt-news__date">2026-11-16</span>
+          <h3>年度影像企划「比例之光」投稿通道开放，接受 12 分钟以内的原创作品</h3>
+          <span class="hrt-news__tag">活动报名</span>
+        </div>
+        <div class="hrt-news__row">
+          <span class="hrt-news__date">2026-11-12</span>
+          <h3>创作者扶持计划第 4 期启动，本期新增结构标注工作坊线下名额 30 位</h3>
+          <span class="hrt-news__tag">成长计划</span>
+        </div>
+        <div class="hrt-news__row">
+          <span class="hrt-news__date">2026-11-05</span>
+          <h3>与三家教育出版社达成内容合作，专业素材库将用于职业教育课程</h3>
+          <span class="hrt-news__tag">企业合作</span>
+        </div>
+        <div class="hrt-news__row">
+          <span class="hrt-news__date">2026-10-28</span>
+          <h3>平台完成版权溯源系统升级，所有授权素材支持一键查询使用记录</h3>
+          <span class="hrt-news__tag">品质保障</span>
+        </div>
+      </div>
+      <div style="margin-top:30px">
+        <h3 style="font-size:14px;color:var(--hrt-dim);margin-bottom:14px;letter-spacing:.06em">合作品牌与伙伴</h3>
+        <div class="hrt-partners">
+          <div class="hrt-partner">明理教育出版社</div>
+          <div class="hrt-partner">拾光动画工作室</div>
+          <div class="hrt-partner">衡动运动科学中心</div>
+          <div class="hrt-partner">白昼影像实验室</div>
+          <div class="hrt-partner">南岭设计学院</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="hrt-section" id="hrt-faq">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Help Center</div>
+        <h2>常见问题</h2>
+        <p>如果你还有别的疑问，欢迎通过下方联系入口告诉我们。</p>
+      </div>
+      <div class="hrt-faq">
+        <details open>
+          <summary>人体1000tr 是什么类型的品牌？</summary>
+          <p>人体1000tr 是一个以人体结构与比例研究为核心的视频内容品牌，官方网站提供原创、正版的精品影像与深度解析，面向创作者、学习者与内容机构。</p>
+        </details>
+        <details>
+          <summary>如何参与投稿？需要满足什么条件？</summary>
+          <p>任何对人体结构、比例观察或视觉表达有持续兴趣的创作者均可投稿。我们在页面的联系与投稿区域提供提交入口，作品需为原创且可溯源，时长建议在 3 至 20 分钟之间。</p>
+        </details>
+        <details>
+          <summary>站内素材可以用于商业项目吗？</summary>
+          <p>标注为"正版授权"的素材可在授权范围内用于商业项目，具体范围以授权说明为准。合作方可通过一键查询查看素材使用记录，确保流程透明可追溯。</p>
+        </details>
+        <details>
+          <summary>专题企划的更新频率是怎样的？</summary>
+          <p>大多数专题按双周更新，「比例之光」年度企划按月度发布。每个专题页都会显示当前更新进度，你也可以在企业动态中查看最新一期上线的官方信息。</p>
+        </details>
+        <details>
+          <summary>创作者扶持计划如何报名？</summary>
+          <p>每期扶持计划启动时会发布企业动态与报名入口，通常包含线上课程、标注模板授权与线下工作坊名额。第 4 期已于 11 月 12 日开放报名。</p>
+        </details>
+        <details>
+          <summary>为什么品牌名里带有数字与字母？</summary>
+          <p>1000 代表我们希望为同一具身体提供尽可能多的观察角度，tr 是团队内部长期使用的记号，指向"痕迹"与"训练"两层含义。名称本身就是我们内容理念的缩写。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系与投稿 -->
+  <section class="hrt-section hrt-section--alt" id="hrt-contact">
+    <div class="hrt-wrap">
+      <div class="hrt-head">
+        <div class="hrt-head__kicker">Contact & Submission</div>
+        <h2>联系与投稿</h2>
+        <p>无论是合作咨询、内容投稿还是问题反馈，我们都会认真阅读。</p>
+      </div>
+      <div class="hrt-contact">
+        <div class="hrt-contact__box">
+          <h3>官方联系渠道</h3>
+          <p>人体1000tr 官方网站由品牌内容中心统一运营，工作时间为周一至周五 10:00–18:00。</p>
+          <div class="hrt-line-item"><b>合作邮箱</b><span>partners@body1000tr.example</span></div>
+          <div class="hrt-line-item"><b>投稿邮箱</b><span>submit@body1000tr.example</span></div>
+          <div class="hrt-line-item"><b>内容中心</b><span>杭州市滨江区江南大道 1000 号 8 层</span></div>
+          <div class="hrt-line-item"><b>媒体联络</b><span>press@body1000tr.example</span></div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+            <button class="hrt-btn hrt-btn--primary" type="button" id="hrtSubmitOpen">我要投稿</button>
+            <button class="hrt-btn hrt-btn--ghost" type="button" id="hrtShareBtn2">分享给朋友</button>
+          </div>
+        </div>
+        <div class="hrt-contact__box">
+          <h3>快速留言</h3>
+          <p>留下你的联系方式与想法，我们会在两个工作日内回复。</p>
+          <div class="hrt-submit">
+            <input class="hrt-submit__field" type="text" placeholder="你的称呼" id="hrtFormName">
+            <input class="hrt-submit__field" type="text" placeholder="联系邮箱或手机号" id="hrtFormContact">
+            <textarea class="hrt-submit__field" placeholder="想聊的内容、投稿方向或合作意向" id="hrtFormMsg"></textarea>
+            <button class="hrt-btn hrt-btn--primary" type="button" id="hrtFormSend">提交留言</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="hrt-footer">
+  <div class="hrt-wrap">
+    <div class="hrt-footer__grid">
+      <div class="hrt-footer__brand">
+        <a class="hrt-brand" href="#hrt-home">
+          <span class="hrt-brand__mark">人</span>
+          <span>
+            <span class="hrt-brand__name">人体1000tr</span>
+            <span class="hrt-brand__sub">Official Video Brand</span>
+          </span>
+        </a>
+        <p>人体1000tr 官方网站，以专业影像持续记录与解析人体结构与比例的千种答案。原创、正版、高清，值得信赖。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#hrt-feature">焦点内容</a></li>
+          <li><a href="#hrt-topics">专题企划</a></li>
+          <li><a href="#hrt-creators">创作者矩阵</a></li>
+          <li><a href="#hrt-about">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#hrt-news">企业动态</a></li>
+          <li><a href="#hrt-faq">帮助中心</a></li>
+          <li><a href="#hrt-contact">联系我们</a></li>
+          <li><a href="#hrt-contact">投稿入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方信息</h4>
+        <ul>
+          <li>持续运营 9 年</li>
+          <li>原创内容 1860 部</li>
+          <li>认证创作者 42600 位</li>
+          <li>服务时间 周一至周五</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hrt-footer__bottom">
+      <span>© 2026 人体1000tr 官方网站 · 版权所有</span>
+      <span>品牌备案号：浙ICP备2026001000号-1 · 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hrt-top" id="hrtTop" type="button" aria-label="回到顶部">↑</button>
+
+<div class="hrt-modal" id="hrtAuthorModal">
+  <div class="hrt-modal__box">
+    <button class="hrt-modal__close" data-hrt-close type="button" aria-label="关闭">×</button>
+    <h3 id="hrtAuthorName">创作者档案</h3>
+    <p id="hrtAuthorDesc"></p>
+    <p style="color:var(--hrt-cyan);font-size:12.5px">关注该作者后可在个人中心查看更新提醒。</p>
+    <button class="hrt-btn hrt-btn--primary" type="button" data-hrt-toast="已关注该创作者">关注创作者</button>
+  </div>
+</div>
+
+<div class="hrt-modal" id="hrtSubmitModal">
+  <div class="hrt-modal__box">
+    <button class="hrt-modal__close" data-hrt-close type="button" aria-label="关闭">×</button>
+    <h3>投稿入口</h3>
+    <p>请填写作品名称与联系邮箱，我们会在三个工作日内给出初审意见。</p>
+    <input class="hrt-field" type="text" placeholder="作品名称" id="hrtSubTitle">
+    <input class="hrt-field" type="text" placeholder="联系邮箱" id="hrtSubMail">
+    <textarea class="hrt-field" rows="3" placeholder="一句话说明你的作品方向" id="hrtSubMsg"></textarea>
+    <button class="hrt-btn hrt-btn--primary" type="button" id="hrtSubSend">提交作品</button>
+  </div>
+</div>
+
+<div class="hrt-modal" id="hrtShareModal">
+  <div class="hrt-modal__box">
+    <button class="hrt-modal__close" data-hrt-close type="button" aria-label="关闭">×</button>
+    <h3>分享人体1000tr</h3>
+    <p>把这份结构与比例的观察，分享给同样感兴趣的朋友。</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="hrt-btn hrt-btn--ghost" type="button" data-hrt-toast="已复制分享文案，可粘贴到微信">微信</button>
+      <button class="hrt-btn hrt-btn--ghost" type="button" data-hrt-toast="已复制分享文案，可粘贴到微博">微博</button>
+      <button class="hrt-btn hrt-btn--ghost" type="button" data-hrt-toast="已复制分享文案，可粘贴到 QQ">QQ</button>
+      <button class="hrt-btn hrt-btn--primary" type="button" data-hrt-copy>复制链接</button>
+    </div>
+  </div>
+</div>
+
+<div class="hrt-toast" id="hrtToast">操作成功</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- 工具 ---------- */
+  var toastEl = document.getElementById('hrtToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('hrt-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('hrt-show');
+    }, 2200);
+  }
+
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('链接已复制');
+      }).catch(function(){
+        fallbackCopy(text);
+      });
+    } else {
+      fallbackCopy(text);
+    }
+  }
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand('copy'); showToast('链接已复制'); }
+    catch(e){ showToast('复制失败，请手动选择'); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('hrtBurger');
+  var nav = document.getElementById('hrtNav');
+  burger.addEventListener('click', function(){
+    nav.classList.toggle('hrt-nav--open');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('hrt-nav--open'); }
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('hrtSearchInput');
+  var searchBtn = document.getElementById('hrtSearchBtn');
+  var searchHint = document.getElementById('hrtSearchHint');
+  var searchPool = [
+    '三角形支撑在站姿中的三种读法',
+    '头部与身高的比例对照实验',
+    '行走轨迹的时间切片记录',
+    '肩颈放松的站姿对位',
+    '同比例的三种画面占比',
+    '布光与比例标注现场',
+    '对谈：四年只研究一个站姿',
+    '肩胛带的稳定结构',
+    '比例之光 · 年度影像企划',
+    '沈砚舟', '林知野', '周予安', '许南枝'
+  ];
+  function doSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      searchHint.textContent = '可试试：比例、站姿、结构、街头、标注';
+      searchHint.classList.add('hrt-show');
+      setTimeout(function(){ searchHint.classList.remove('hrt-show'); }, 2600);
+      return;
+    }
+    var hits = searchPool.filter(function(item){
+      return item.indexOf(kw) > -1;
+    });
+    if(hits.length){
+      searchHint.textContent = '找到 ' + hits.length + ' 条相关内容：' + hits.slice(0,3).join('、');
+    } else {
+      searchHint.textContent = '暂时没有匹配到「' + kw + '」，投稿入口欢迎你把想法告诉我们';
+    }
+    searchHint.classList.add('hrt-show');
+    clearTimeout(window.__hrtSearchT);
+    window.__hrtSearchT = setTimeout(function(){
+      searchHint.classList.remove('hrt-show');
+    }, 4200);
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ doSearch(); }
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var filterWrap = document.getElementById('hrtFilter');
+  var grid = document.getElementById('hrtVideoGrid');
+  filterWrap.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-hrt-filter]');
+    if(!btn) return;
+    var cat = btn.getAttribute('data-hrt-filter');
+    filterWrap.querySelectorAll('.hrt-chip').forEach(function(c){ c.classList.remove('hrt-chip--active'); });
+    btn.classList.add('hrt-chip--active');
+    grid.querySelectorAll('[data-hrt-cat]').forEach(function(card){
+      var show = (cat === 'all') || (card.getAttribute('data-hrt-cat') === cat);
+      card.style.display = show ? '' : 'none';
+    });
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-hrt-like]');
+    if(likeBtn){
+      var numEl = likeBtn.querySelector('span');
+      var on = likeBtn.classList.toggle('hrt-op--on');
+      if(numEl){
+        var n = parseInt(numEl.textContent, 10) || 0;
+        numEl.textContent = on ? (n + 1) : Math.max(0, n - 1);
+      } else {
+        likeBtn.textContent = on ? '♥ 已赞' : '♡ 46';
+      }
+      return;
+    }
+    var favBtn = e.target.closest('[data-hrt-fav]');
+    if(favBtn){
+      var favOn = favBtn.classList.toggle('hrt-op--fav');
+      favBtn.textContent = favOn ? '★ 已收藏' : '☆ 收藏';
+      return;
+    }
+  });
+
+  /* ---------- 复制链接 ---------- */
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-hrt-copy]')){
+      copyText('人体1000tr 官方网站 · 结构比例的千种读法');
+    }
+  });
+
+  /* ---------- 提示按钮 ---------- */
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('[data-hrt-toast]');
+    if(t){ showToast(t.getAttribute('data-hrt-toast')); }
+  });
+
+  /* ---------- 灵感工具 ---------- */
+  document.addEventListener('click', function(e){
+    var idea = e.target.closest('[data-hrt-idea]');
+    if(idea){
+      document.getElementById('hrtAuthorName').textContent = '创作提示';
+      document.getElementById('hrtAuthorDesc').textContent = idea.getAttribute('data-hrt-idea');
+      document.getElementById('hrtAuthorModal').classList.add('hrt-show');
+    }
+  });
+
+  /* ---------- 作者档案弹窗 ---------- */
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-hrt-author]');
+    if(!btn) return;
+    var parts = btn.getAttribute('data-hrt-author').split('|');
+    document.getElementById('hrtAuthorName').textContent = parts[0] + ' · 创作者档案';
+    document.getElementById('hrtAuthorDesc').textContent = parts[1] || '';
+    document.getElementById('hrtAuthorModal').classList.add('hrt-show');
+  });
+
+  /* ---------- 弹窗关闭 ---------- */
+  document.querySelectorAll('[data-hrt-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btn.closest('.hrt-modal').classList.remove('hrt-show');
+    });
+  });
+  document.querySelectorAll('.hrt-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m){ m.classList.remove('hrt-show'); }
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.hrt-modal.hrt-show').forEach(function(m){ m.classList.remove('hrt-show'); });
+    }
+  });
+
+  /* ---------- 分享 ---------- */
+  function openShare(){
+    document.getElementById('hrtShareModal').classList.add('hrt-show');
+  }
+  document.getElementById('hrtShareBtn').addEventListener('click', openShare);
+  document.getElementById('hrtShareBtn2').addEventListener('click', openShare);
+
+  /* ---------- 投稿弹窗 ---------- */
+  document.getElementById('hrtSubmitOpen').addEventListener('click', function(){
+    document.getElementById('hrtSubmitModal').classList.add('hrt-show');
+  });
+  document.getElementById('hrtSubSend').addEventListener('click', function(){
+    var title = document.getElementById('hrtSubTitle').value.trim();
+    var mail = document.getElementById('hrtSubMail').value.trim();
+    if(!title || !mail){
+      showToast('请填写作品名称与联系邮箱');
+      return;
+    }
+    document.getElementById('hrtSubmitModal').classList.remove('hrt-show');
+    showToast('作品已提交，我们会尽快联系你');
+    document.getElementById('hrtSubTitle').value = '';
+    document.getElementById('hrtSubMail').value = '';
+    document.getElementById('hrtSubMsg').value = '';
+  });
+
+  /* ---------- 留言表单 ---------- */
+  document.getElementById('hrtFormSend').addEventListener('click', function(){
+    var name = document.getElementById('hrtFormName').value.trim();
+    var contact = document.getElementById('hrtFormContact').value.trim();
+    var msg = document.getElementById('hrtFormMsg').value.trim();
+    if(!name || !contact || !msg){
+      showToast('请完善称呼、联系方式与留言内容');
+      return;
+    }
+    showToast('留言已收到，感谢你的支持');
+    document.getElementById('hrtFormName').value = '';
+    document.getElementById('hrtFormContact').value = '';
+    document.getElementById('hrtFormMsg').value = '';
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('hrtTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 420){ topBtn.classList.add('hrt-show'); }
+    else { topBtn.classList.remove('hrt-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-hrt-count]');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-hrt-count'), 10) || 0;
+      var start = null;
+      var dur = 1300;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.floor(target * eased);
+        el.textContent = val.toLocaleString('zh-CN');
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString('zh-CN');
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, {threshold:0.4});
+    var heroStats = document.querySelector('.hrt-hero__stats');
+    if(heroStats) io.observe(heroStats);
+  } else {
+    runCounters();
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var sections = ['hrt-home','hrt-feature','hrt-topics','hrt-creators','hrt-about','hrt-news','hrt-faq','hrt-contact'];
+  var navLinks = document.querySelectorAll('.hrt-nav a');
+  if('IntersectionObserver' in window){
+    var secObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id = en.target.id;
+          navLinks.forEach(function(a){
+            a.classList.toggle('hrt-nav--active', a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, {rootMargin:'-40% 0px -50% 0px'});
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el) secObserver.observe(el);
+    });
+  }
+
+})();
+</script>
+</body>
+  </html>
